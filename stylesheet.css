@@ -1,0 +1,118 @@
+/* Latin font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Styling for entire document */
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Link styling */
+a, a:visited {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f09228;
+  text-decoration: underline;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 6px;
+  color: #444;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1772d0;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 6px;
+}
+
+/* List styling */
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Responsive image scaling */
+.hoverZoomLink {
+  transition: transform .3s;
+  display: block;
+  border-radius: 10px;
+}
+
+.hoverZoomLink:hover {
+  transform: scale(1.03);
+}
+
+/* Table styling */
+table {
+  margin-bottom: 16px;
+}
+
+/* Skills section styling */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: #f5f5f5;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  td {
+    display: block;
+    width: 100% !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
